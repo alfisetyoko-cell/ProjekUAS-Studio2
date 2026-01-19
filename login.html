@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Admin | SIPERDES-SR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+        
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            background: radial-gradient(circle at top right, #fff7ed, #ffffff);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .orange-gradient {
+            background: linear-gradient(135deg, #f59e0b 0%, #ea580c 100%);
+        }
+
+        .login-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 25px 50px -12px rgba(234, 88, 12, 0.1);
+        }
+
+        .input-focus:focus {
+            border-color: #ea580c;
+            box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.1);
+            outline: none;
+        }
+    </style>
+</head>
+<body class="antialiased p-6">
+
+    <div class="max-w-md w-full">
+        <div class="text-center mb-10">
+            <div class="inline-flex items-center space-x-3 mb-6">
+                <img src="gambar/logo-siperdes.jpg" alt="Logo" class="h-12 w-auto rounded-xl shadow-md">
+                <h1 class="font-extrabold text-slate-900 text-2xl tracking-tighter uppercase">SIPERDES<span class="text-orange-600">-SR</span></h1>
+            </div>
+            <h2 class="text-3xl font-black text-slate-900 tracking-tight">Portal Admin</h2>
+            <p class="text-slate-500 mt-2 font-medium">Silakan masuk untuk mengelola data spasial.</p>
+        </div>
+
+        <div class="login-card p-10 rounded-[2.5rem]">
+            <form action="dashboard.html" method="POST">
+                <div class="mb-6">
+                    <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Username</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-400">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <input type="text" placeholder="Masukkan username" 
+                               class="w-full pl-11 pr-4 py-4 bg-white border border-slate-100 rounded-2xl text-sm font-semibold text-slate-900 input-focus transition-all">
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 mb-2 ml-1">Password</label>
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-400">
+                            <i class="fas fa-lock"></i>
+                        </span>
+                        <input type="password" placeholder="••••••••" 
+                               class="w-full pl-11 pr-4 py-4 bg-white border border-slate-100 rounded-2xl text-sm font-semibold text-slate-900 input-focus transition-all">
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-between mb-8 px-1">
+                    <label class="flex items-center">
+                        <input type="checkbox" class="rounded border-slate-300 text-orange-600 focus:ring-orange-500 h-4 w-4">
+                        <span class="ml-2 text-xs font-bold text-slate-500 uppercase tracking-wider">Ingat Saya</span>
+                    </label>
+                    <a href="#" class="text-xs font-bold text-orange-600 hover:text-orange-700 uppercase tracking-wider transition">Lupa Password?</a>
+                </div>
+
+                <button type="submit" class="w-full orange-gradient text-white py-4 rounded-2xl font-bold uppercase tracking-widest shadow-xl shadow-orange-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
+                    Masuk Sekarang
+                </button>
+            </form>
+        </div>
+
+        <div class="text-center mt-10">
+            <a href="index.html" class="text-slate-400 hover:text-slate-900 text-xs font-bold uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2">
+                <i class="fas fa-arrow-left text-[10px]"></i> Kembali ke Beranda
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
